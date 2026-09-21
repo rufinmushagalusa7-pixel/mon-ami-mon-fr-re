@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090d16">
+<meta name="description" content="Hommage et heureuse mémoire à Papa Léopold Shabani Lwambo.">
+<title>Heureuse mémoire — Papa Léopold Shabani Lwambo</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg:#060912;
+    --bg2:#0d1422;
+    --glass:rgba(17,25,39,.72);
+    --glass2:rgba(255,255,255,.055);
+    --gold:#d8b878;
+    --gold-light:#f0dcae;
+    --white:#f5f3ed;
+    --muted:#b8b7b2;
+    --line:rgba(216,184,120,.25);
+    --shadow:0 30px 80px rgba(0,0,0,.55);
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+    color:var(--white);
+    background:
+        radial-gradient(circle at 15% 10%,rgba(216,184,120,.10),transparent 28%),
+        radial-gradient(circle at 85% 25%,rgba(75,100,150,.14),transparent 30%),
+        linear-gradient(135deg,#050811,#0a101b 45%,#05070d);
+    font-family:Georgia,"Times New Roman",serif;
+    line-height:1.85;
+    overflow-x:hidden;
+}
+
+/* PARTICULES */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:.22;
+    background-image:
+        radial-gradient(circle,rgba(255,255,255,.7) 1px,transparent 1px);
+    background-size:85px 85px;
+    mask-image:linear-gradient(to bottom,black,transparent);
+}
+
+.container{
+    width:min(1050px,94%);
+    margin:auto;
+    padding:35px 0 70px;
+}
+
+/* HERO */
+.hero{
+    position:relative;
+    text-align:center;
+    padding:65px 25px 45px;
+    border:1px solid var(--line);
+    border-radius:35px;
+    background:linear-gradient(
+        145deg,
+        rgba(255,255,255,.075),
+        rgba(255,255,255,.025)
+    );
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter:blur(22px);
+    box-shadow:var(--shadow);
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:330px;
+    height:330px;
+    border-radius:50%;
+    background:rgba(216,184,120,.09);
+    filter:blur(60px);
+    top:-180px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.cross{
+    position:relative;
+    font-size:38px;
+    color:var(--gold-light);
+    margin-bottom:18px;
+    opacity:.9;
+}
+
+.hero h1{
+    position:relative;
+    font-size:clamp(2rem,6vw,4rem);
+    font-weight:400;
+    letter-spacing:3px;
+    line-height:1.2;
+    color:#f8f0dc;
+    text-shadow:0 5px 25px rgba(0,0,0,.5);
+}
+
+.hero h1 span{
+    display:block;
+    margin-top:13px;
+    font-size:clamp(1rem,3vw,1.35rem);
+    letter-spacing:5px;
+    color:var(--gold);
+    text-transform:uppercase;
+}
+
+.decor{
+    width:160px;
+    height:1px;
+    margin:28px auto;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        var(--gold),
+        transparent
+    );
+}
+
+.hero .subtitle{
+    position:relative;
+    color:#d2d0c8;
+    font-size:1.05rem;
+    max-width:700px;
+    margin:auto;
+    font-style:italic;
+}
+
+/* PLAYER */
+.music-card{
+    margin:30px 0;
+    padding:28px;
+    border-radius:28px;
+    border:1px solid var(--line);
+    background:rgba(9,14,24,.76);
+    backdrop-filter:blur(20px);
+    box-shadow:0 20px 60px rgba(0,0,0,.38);
+    text-align:center;
+}
+
+.music-card .music-icon{
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.music-card h2{
+    color:var(--gold-light);
+    font-size:1.5rem;
+    font-weight:400;
+    margin-bottom:5px;
+}
+
+.music-card p{
+    color:var(--muted);
+    font-size:.92rem;
+    margin-bottom:18px;
+}
+
+audio{
+    width:100%;
+    max-width:700px;
+    height:50px;
+    border-radius:50px;
+}
+
+.play-button{
+    margin-top:18px;
+    border:1px solid var(--gold);
+    background:linear-gradient(135deg,#d8b878,#a78345);
+    color:#111;
+    padding:12px 27px;
+    border-radius:50px;
+    cursor:pointer;
+    font-family:Georgia,serif;
+    font-size:1rem;
+    font-weight:bold;
+    transition:.3s ease;
+    box-shadow:0 8px 25px rgba(216,184,120,.18);
+}
+
+.play-button:hover{
+    transform:translateY(-2px) scale(1.02);
+    box-shadow:0 12px 30px rgba(216,184,120,.3);
+}
+
+.autoplay-info{
+    margin-top:10px;
+    color:#888;
+    font-size:.78rem;
+}
+
+/* CONTENU */
+.content{
+    margin-top:30px;
+    padding:50px clamp(20px,5vw,65px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:35px;
+    background:rgba(9,14,23,.75);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    box-shadow:var(--shadow);
+}
+
+.content::first-letter{
+    color:var(--gold);
+}
+
+.paragraph{
+    margin-bottom:27px;
+    color:#e4e2dc;
+    font-size:1.08rem;
+    text-align:justify;
+}
+
+.paragraph:first-child::first-letter{
+    float:left;
+    font-size:4.2rem;
+    line-height:.8;
+    padding:8px 12px 0 0;
+    color:var(--gold);
+}
+
+.highlight{
+    margin:42px 0;
+    padding:25px 28px;
+    border-left:3px solid var(--gold);
+    border-radius:0 20px 20px 0;
+    background:linear-gradient(
+        90deg,
+        rgba(216,184,120,.10),
+        transparent
+    );
+    color:#e9d9b5;
+    font-style:italic;
+    font-size:1.15rem;
+}
+
+.divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    margin:45px 0;
+    color:var(--gold);
+    opacity:.8;
+    letter-spacing:7px;
+}
+
+.divider::before,
+.divider::after{
+    content:"";
+    height:1px;
+    width:90px;
+    background:linear-gradient(90deg,transparent,var(--gold));
+}
+
+.divider::after{
+    background:linear-gradient(90deg,var(--gold),transparent);
+}
+
+.scripture{
+    margin:42px 0;
+    padding:32px 25px;
+    text-align:center;
+    border:1px solid var(--line);
+    border-radius:25px;
+    background:
+        radial-gradient(circle at center,rgba(216,184,120,.09),transparent 70%),
+        rgba(0,0,0,.18);
+    color:#f0dfba;
+    font-size:1.28rem;
+    font-style:italic;
+}
+
+.scripture small{
+    display:block;
+    margin-top:13px;
+    color:#aaa;
+    font-size:.9rem;
+    font-style:normal;
+}
+
+.final-message{
+    text-align:center;
+    padding:40px 20px 20px;
+    color:#e9d8b2;
+    font-size:1.25rem;
+    font-style:italic;
+}
+
+.signature{
+    margin-top:45px;
+    padding-top:30px;
+    border-top:1px dashed rgba(216,184,120,.3);
+    text-align:center;
+    color:#ddd;
+}
+
+.signature strong{
+    display:block;
+    margin-top:12px;
+    color:var(--gold-light);
+    font-size:1.35rem;
+    font-weight:400;
+}
+
+.footer{
+    text-align:center;
+    margin-top:35px;
+    color:#858891;
+    font-size:.85rem;
+    letter-spacing:1px;
+}
+
+.back-top{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    border:1px solid var(--line);
+    background:rgba(15,21,32,.85);
+    color:var(--gold-light);
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    opacity:0;
+    pointer-events:none;
+    transition:.3s;
+    backdrop-filter:blur(12px);
+}
+
+.back-top.show{
+    opacity:1;
+    pointer-events:auto;
+}
+
+/* ANIMATION */
+.reveal{
+    opacity:0;
+    transform:translateY(25px);
+    transition:opacity .8s ease,transform .8s ease;
+}
+
+.reveal.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+    .container{
+        width:94%;
+        padding-top:15px;
+    }
+
+    .hero{
+        padding:45px 18px 35px;
+        border-radius:25px;
+    }
+
+    .hero h1{
+        letter-spacing:1px;
+    }
+
+    .hero h1 span{
+        letter-spacing:2px;
+    }
+
+    .content{
+        padding:35px 20px;
+        border-radius:25px;
+    }
+
+    .paragraph{
+        font-size:1rem;
+        text-align:left;
+        line-height:1.8;
+    }
+
+    .paragraph:first-child::first-letter{
+        font-size:3.5rem;
+    }
+
+    .music-card{
+        padding:22px 15px;
+        border-radius:22px;
+    }
+
+    .highlight{
+        padding:20px;
+        font-size:1.05rem;
+    }
+
+    .scripture{
+        font-size:1.1rem;
+        padding:25px 18px;
+    }
+
+    .divider::before,
+    .divider::after{
+        width:45px;
+    }
+}
+
+@media(prefers-reduced-motion:reduce){
+    *{
+        scroll-behavior:auto!important;
+        transition:none!important;
+        animation:none!important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- EN-TÊTE -->
+    <header class="hero reveal">
+        <div class="cross">✝</div>
+
+        <h1>
+            Papa Léopold Shabani Lwambo
+            <span>Heureuse mémoire 🤍 🕊️</span>
+        </h1>
+
+        <div class="decor"></div>
+
+        <p class="subtitle">
+            Une mémoire qui demeure, un amour qui continue,
+            une présence qui change de forme mais ne disparaît pas.
+        </p>
+    </header>
+
+
+    <!-- MUSIQUE -->
+    <section class="music-card reveal">
+
+        <div class="music-icon">🎵</div>
+
+        <h2>Athoms Mbuma — « Cache-toi »</h2>
+
+        <p>
+            Que cette musique accompagne doucement ce moment de souvenir,
+            de prière et d'espérance.
+        </p>
+
+        <audio id="memorialAudio" autoplay controls preload="auto">
+            <!-- REMPLACE UNIQUEMENT LE LIEN CI-DESSOUS PAR TON FICHIER -->
+            <source src="Cache-toi/Cache-toi.mp3.mpeg" type="audio/mpeg">
+            Votre navigateur ne supporte pas la lecture audio.
+        </audio>
+
+        <button class="play-button" id="playButton">
+            ▶ Écouter la chanson
+        </button>
+
+        <div class="autoplay-info" id="autoplayInfo">
+            Lecture automatique en cours…
+        </div>
+
+    </section>
+
+
+    <!-- HOMMAGE -->
+    <main class="content">
+
+        <p class="paragraph reveal">
+            Il y a des pertes qui bouleversent profondément l’ordre intérieur
+            de notre monde. Certaines épreuves nous laissent sans mots, sans
+            réponses, presque sans direction ; on ne comprend plus vraiment
+            ce qui nous arrive, on avance avec le cœur lourd, confus, comme si
+            l’on avait perdu la boussole, et parfois, il faut simplement du
+            temps pour retrouver son chemin.
+        </p>
+
+        <p class="paragraph reveal">
+            Perdre un père, c’est voir se fissurer une part essentielle de son
+            univers intérieur. Ce n’est pas seulement perdre une personne que
+            l’on aime ; c’est perdre une voix qui nous conseillait, un regard
+            qui nous rassurait, une présence qui donnait à la famille un
+            sentiment de sécurité. Avec un père ce ne sont pas simplement des
+            liens biologiques ; c’est aussi une destinée commune. Un parent,
+            c’est celui qui nous aime, qui nous choisit, qui nous accompagne
+            et qui croit en nous sans regarder d’abord nos erreurs ou nos
+            faiblesses. Un père donne sans toujours attendre quelque chose en
+            retour ; il construit, il protège, il conseille et il transmet.
+        </p>
+
+        <p class="paragraph reveal">
+            Papa Léopold Shabani Lwambo t’a transmis bien plus qu’un nom ;
+            aujourd’hui, ce nom que tu portes prend une dimension particulière ;
+            tu as hérité de son nom, mais aussi d’une partie de son histoire,
+            de ses valeurs et de certaines responsabilités. Tu es le cadet,
+            mais dans la réalité de cette nouvelle étape familiale, certains
+            pourront désormais te regarder comme une figure paternelle.
+        </p>
+
+        <p class="paragraph reveal">
+            Cela peut faire peur ; tu peux te demander si tu seras capable de
+            porter ce rôle, comment gérer les relations avec tes grands frères
+            et tes grandes sœurs, comment préserver l’unité de la famille,
+            prendre émotionnellement soin de maman, prendre certaines décisions
+            ou répondre aux attentes qui pourront désormais reposer sur toi.
+            Mais écoute-moi bien : n’aie pas peur. Tu n’as pas été choisi pour
+            remplacer ton père ; personne ne pourra prendre exactement sa place.
+            Une place laissée par un père ne se remplace pas, elle se respecte.
+            Tu es simplement appelé à continuer, à ta manière, ce qu’il t’a transmis.
+        </p>
+
+        <p class="paragraph reveal">
+            Être considéré comme une figure paternelle dans certaines
+            circonstances ne signifie pas devenir quelqu’un d’autre ; cela
+            signifie apprendre à porter certaines responsabilités avec
+            maturité, amour, patience et sagesse. Ton père t’avait parlé de
+            la famille, de la responsabilité, de la sagesse, de la nécessité
+            de rechercher la paix, de trouver des solutions lorsque les
+            problèmes apparaissent et de savoir écouter avant de décider.
+            Aujourd’hui, ces paroles prennent une profondeur ; elles ne sont
+            plus seulement les conseils d’un père à son fils, elles deviennent
+            un héritage. Lorsque des incompréhensions apparaîtront entre tes
+            frères et sœurs, cherche d’abord la paix ; lorsque quelqu’un aura
+            besoin d’être écouté, sois disponible ; lorsque tu devras prendre
+            une décision, ne te précipite pas ; lorsque tu ne sauras pas quoi
+            faire, prie sérieusement ; lorsque tu seras dépassé, demande conseil.
+            Et lorsque tu seras obligé d’être ferme, que ta fermeté soit toujours
+            accompagnée de justice, de sagesse et d’amour.
+        </p>
+
+        <p class="paragraph reveal">
+            Souviens-toi de la sagesse de Salomon : lorsqu’une grande
+            responsabilité lui fut confiée, il demanda à Dieu un cœur capable
+            de discerner. Toi aussi, demande cette sagesse ; ne demande pas
+            seulement à Dieu la force de tout porter, demande-Lui de t’apprendre
+            comment porter ce qui t’est confié. Car être une figure paternelle
+            ne signifie pas commander tout le monde ; cela signifie servir,
+            écouter, rassembler, conseiller, protéger, apaiser et parfois
+            reconnaître que l’on a soi-même besoin d’aide.
+        </p>
+
+        <p class="paragraph reveal">
+            Et dans cette nouvelle étape, apprends aussi à maîtriser tes
+            émotions. Ne sois pas dominé par tes émotions ; sois sage. Ne
+            permets pas aux choses extérieures de troubler profondément ton
+            monde intérieur, au point de perdre ta paix, ton discernement ou
+            ta stabilité. Ne sois pas excessivement sensible à tout ce qui
+            se dira ou se passera autour de toi, car si tu laisses chaque
+            situation t’atteindre profondément, tu risques de créer en toi
+            une instabilité émotionnelle ; et pourtant tu auras besoin de
+            cette stabilité pour écouter, réfléchir, conseiller et porter
+            ta famille. Cela ne signifie pas devenir insensible, ni cesser
+            de ressentir ; cela signifie apprendre à accueillir ce que tu
+            ressens sans laisser tes émotions décider à ta place. Sois peu
+            sensible, mais sois aussi sage ; écoute sans tout absorber,
+            aime sans te perdre, aide sans porter seul le poids de tout le
+            monde, et prends du recul avant de réagir. Ta famille aura besoin
+            de ton cœur, mais elle aura aussi besoin de ton équilibre.
+        </p>
+
+        <p class="paragraph reveal">
+            Tes grands frères et tes grandes sœurs ont leur place, toi aussi
+            tu as la tienne ; ne cherche donc pas à prendre la place de tout
+            le monde, cherche plutôt à contribuer à l’équilibre de la famille.
+            Et surtout, n’oublie pas ta maman. Da Eugé vient de perdre son mari,
+            son compagnon de vie, celui avec qui elle avait construit une grande
+            partie de son histoire ; elle aura besoin de vous tous, mais aussi
+            de toi. Pas pour remplacer son mari, personne ne le peut, mais pour
+            être son fils, son soutien, son écoute et cette présence auprès de
+            laquelle elle pourra parler librement. Approche-la avec douceur,
+            écoute-la, respecte ses silences, accueille ses larmes, laisse-la
+            raconter ses souvenirs ; prie avec elle, lorsque tu ne sauras pas
+            quoi lui dire, reste simplement près d’elle. Parfois, une présence
+            silencieuse console davantage qu’un long discours.
+        </p>
+
+        <p class="paragraph reveal">
+            Dans cette nouvelle responsabilité, n’oublie jamais une chose
+            essentielle : tes intérêts personnels ne doivent pas entrer en
+            conflit avec tes engagements moraux et familiaux. Tu as aussi le
+            droit de construire ta vie, d’avoir des rêves, des projets, une
+            carrière, une famille et des ambitions personnelles ; prendre soin
+            de ta famille émotionnellement ne signifie pas renoncer à ton propre
+            avenir, ni ne pas tenir à tes relations amoureuses, amicales, tes
+            liens de partenariat, tes sentiments… Lorsque tes intérêts entreront
+            en tension avec les responsabilités que tu as acceptées, apprends à
+            chercher un équilibre ; que tes intérêts soient partagés avec ceux
+            de ta famille, que ta réussite ne soit pas construite au détriment
+            de ceux qui comptent sur toi, que tes engagements soient respectés
+            et que tes décisions soient guidées non seulement par ce qui est
+            avantageux pour toi, mais aussi par ce qui est juste, raisonnable
+            et conforme aux valeurs que ton père t’a transmises.
+        </p>
+
+        <p class="paragraph reveal">
+            Tu peux réussir sans abandonner les tiens ; tu peux construire ta
+            relation amoureuse, ton avenir tout en restant présent pour ta
+            famille, surtout présent pour ta mère. Il ne s’agit pas de choisir
+            entre toi et les autres, mais d’apprendre à construire une vie où
+            tes intérêts et tes engagements peuvent trouver leur juste équilibre.
+            Et lorsque tu ne sauras pas comment y parvenir, retourne à Dieu ;
+            prie avant les grandes décisions, dans les moments de colère, de
+            confusion, de peur ou de joie. Continue également les prières en
+            famille ; chaque chapelet récité ensemble et chaque prière offerte
+            pour papa Léopold peuvent devenir une manière de faire vivre votre
+            foi et votre unité. La prière ne supprimera pas ton chagrin, mais
+            elle peut t’aider à le déposer entre les mains de Dieu.
+        </p>
+
+
+        <div class="divider reveal">
+            🤍 🤍 🤍
+        </div>
+
+
+        <p class="paragraph reveal">
+            N’oublie pas ; tout ce que Dieu fait est bon.
+        </p>
+
+
+        <div class="scripture reveal">
+            « L’Éternel est proche de ceux qui ont le cœur brisé,
+            et Il sauve ceux qui ont l’esprit abattu. »
+            <small>— Psaume 34:18</small>
+        </div>
+
+
+        <p class="paragraph reveal">
+            Lorsque ton cœur sera brisé et que ton âme sera accablée par la
+            douleur, viens à Dieu avec ton chagrin ; ne crains pas de pleurer,
+            ne crains pas de ressentir la solitude, ne crains pas de reconnaître
+            que tu es fatigué. Dans ces moments où les mots deviennent difficiles
+            à trouver, laisse simplement ton cœur se tourner vers Celui qui
+            connaît ta douleur avant même que tu ne puisses l’exprimer.
+        </p>
+
+        <p class="paragraph reveal">
+            Que le Cœur Immaculé de Marie t’entoure de sa tendresse et intercède
+            pour toi ; qu’elle soit cette présence maternelle vers laquelle tu
+            peux te tourner lorsque le manque devient trop lourd, lorsque les
+            souvenirs reviennent avec force et lorsque les larmes ne peuvent
+            plus être retenues. Maman Marie, console ton cœur, soutiens ta famille
+            et accompagne chacun de ses pas dans cette période douloureuse.
+        </p>
+
+        <p class="paragraph reveal">
+            Dans le livre bleu, lors des apparitions de notre mère céleste ;
+            il est écrit : « Souviens-toi, mon enfant : la mort n’arrête pas
+            l’amour, il l’élève dans une autre dimension. »
+        </p>
+
+        <p class="paragraph reveal">
+            Ces mots peuvent devenir une petite lumière dans les jours les plus
+            sombres ; car même si la présence physique disparaît, l’amour vécu,
+            les souvenirs partagés et les traces laissées dans nos vies demeurent
+            profondément en nous. Chaque souvenir heureux, chaque parole reçue,
+            chaque moment vécu avec celui qui est parti peut devenir une lumière
+            dans laquelle nous continuons à le reconnaître.
+        </p>
+
+        <p class="paragraph reveal">
+            Dans la douleur de cette perte, garde cette espérance : Dieu ne se
+            trompe pas. Ses voies dépassent notre intelligence ; même lorsque
+            nous ne comprenons pas pourquoi certaines séparations arrivent,
+            nous pouvons remettre entre Ses mains ce que notre cœur n’arrive
+            pas à porter.
+        </p>
+
+        <p class="paragraph reveal">
+            Heureux ceux qui l’ont connu ; heureux toi qui as été béni de marcher
+            à ses côtés ; heureux celui qui a pu l’appeler père, ami, frère,
+            parent. Car papa Léopold n’était pas une personne ordinaire ; il était
+            une richesse, une présence rare, un homme d’une humilité constante,
+            de ces êtres qui marquent les vies et laissent une empreinte silencieuse
+            mais indélébile dans le cœur de ceux qu’ils rencontrent.
+        </p>
+
+        <p class="paragraph reveal">
+            Reste fier de l’avoir connu, fier d’avoir reçu son amour, fier des
+            moments que la vie vous a accordés. Tout le monde n’a pas la grâce
+            d’avoir connu un père comme lui ; son attitude, sa foi, sa manière
+            d’aimer, sa loyauté et son humilité ont laissé un témoignage qui
+            continuera de parler à ceux qui l’ont connu. Même son départ nous
+            rappelle la valeur de la vie, la profondeur des liens et la puissance
+            de l’amour véritable.
+        </p>
+
+        <p class="paragraph reveal">
+            Alors, ne regarde pas uniquement l’absence ; regarde aussi la grâce
+            d’avoir partagé une partie de ta vie avec lui. Il t’a laissé des
+            souvenirs que personne ne pourra effacer, des paroles qui continueront
+            de résonner, des valeurs qui pourront encore éclairer tes choix et
+            un nom qui restera attaché à son histoire. Ce qui a été vécu avec
+            amour ne devient pas inutile parce que la mort est venue ; au contraire,
+            cela prend parfois une valeur encore plus profonde.
+        </p>
+
+        <p class="paragraph reveal">
+            Lorsque le manque sera particulièrement douloureux, prends un instant,
+            ferme les yeux et laisse les souvenirs revenir ; les conseils, les
+            rires, les balades, les discussions, les prières, les moments simples
+            qui semblaient autrefois ordinaires. Certains de ces instants
+            deviendront avec le temps de véritables trésors ; tu comprendras
+            alors que les plus belles traces laissées par une personne ne sont
+            pas toujours les grandes choses, mais aussi ces petits moments qui
+            continuent de vivre dans notre mémoire.
+        </p>
+
+        <p class="paragraph reveal">
+            Tu connaîtras peut-être des jours où tu te demanderas :
+            « Papa, est-ce que je fais bien ? » ; tu n’entendras peut-être plus
+            sa voix comme autrefois, mais ce que tu as reçu de lui continuera
+            de résonner en toi. Et peut-être qu’un jour, avec les années, tu
+            pourras regarder ton chemin avec paix et lui dire dans le secret
+            de ton cœur : « Papa, j’ai essayé de respecter ce que tu m’avais
+            enseigné ; j’ai cherché la paix, j’ai aimé les miens, j’ai respecté
+            mes engagements, j’ai construit ma vie avec courage et j’ai porté
+            ton nom avec dignité. »
+        </p>
+
+        <p class="paragraph reveal">
+            Alors, sèche tes larmes lorsque tu le peux, mais ne te reproche
+            jamais de pleurer ; le deuil n’a pas de calendrier et l’amour ne
+            disparaît pas parce que les jours passent. Avance doucement, un
+            jour après l’autre, avec Dieu comme refuge et avec l’espérance
+            comme lumière.
+        </p>
+
+        <p class="paragraph reveal">
+            Que le Cœur Immaculé de Marie t’accompagne ; qu’elle couvre ta
+            famille de son manteau maternel, qu’elle console ta maman, qui est
+            l’une de ses enfants qui sont présents dans son cœur immaculé,
+            qu’elle fortifie chacun de vous et vous garde unis dans l’amour.
+            Que la Miséricorde divine enveloppe l’âme de papa Léopold, que Dieu
+            lui accorde le repos éternel et qu’Il donne à tous ceux qui l’aiment
+            la force de continuer à vivre avec foi, courage, sagesse et espérance.
+        </p>
+
+        <p class="paragraph reveal">
+            Le ciel a reçu un ange : papa Léopold ; la terre, elle, a perdu
+            un trésor. Mais son souvenir demeure, son nom demeure, l’amour demeure ;
+            et tant que ceux qui l’ont aimé continueront à parler de lui avec
+            tendresse, à se souvenir de ses qualités et à transmettre les valeurs
+            qu’il incarnait, son passage parmi vous continuera de porter du fruit.
+        </p>
+
+        <p class="paragraph reveal">
+            Alors reste fort, non pas parce que tu dois cacher ta douleur,
+            mais parce que tu peux avancer malgré elle ; reste humble, reste
+            fidèle à Dieu, garde l’espérance et laisse le temps faire doucement
+            son œuvre. Que chaque larme versée devienne une prière, que chaque
+            souvenir devienne une reconnaissance et que chaque journée vécue
+            soit une manière de rendre grâce pour le cadeau qu’a été sa présence
+            dans votre vie. Que sa mémoire demeure à jamais une source d’amour,
+            de sagesse et d’unité pour toute la famille.
+        </p>
+
+
+        <div class="divider reveal">
+            🤍 🕊️ 🤍
+        </div>
+
+
+        <div class="final-message reveal">
+            « Le ciel a reçu un ange : papa Léopold ;
+            la terre, elle, a perdu un trésor.
+            Mais son souvenir demeure, son nom demeure,
+            l’amour demeure. »
+        </div>
+
+
+        <div class="signature reveal">
+            Heureuse mémoire 🤍🕊️
+
+            <strong>
+                Balibuno Shabani Mudahama Léopold Lwambo
+            </strong>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        Avec amour, respect, foi et espérance.
+        <br>
+        Que la paix demeure dans les cœurs.
+    </footer>
+
+</div>
+
+
+<button class="back-top" id="backTop" aria-label="Retour en haut">
+    ↑
+</button>
+
+
+<script>
+
+/* =========================================================
+   LECTEUR AUDIO
+   ========================================================= */
+
+const audio = document.getElementById("memorialAudio");
+const playButton = document.getElementById("playButton");
+const autoplayInfo = document.getElementById("autoplayInfo");
+
+/*
+   AUTOPLAY :
+   Le navigateur reçoit ici la demande de lecture automatique.
+   Certains navigateurs bloquent cependant l'audio avec son
+   jusqu'à une première interaction de l'utilisateur.
+*/
+
+window.addEventListener("load", async () => {
+
+    try {
+
+        await audio.play();
+
+        playButton.innerHTML = "⏸ Pause";
+        autoplayInfo.textContent = "La musique est en lecture.";
+
+    } catch(error) {
+
+        autoplayInfo.textContent =
+            "Cliquez sur « Écouter la chanson » pour lancer la musique.";
+
+    }
+
+});
+
+
+playButton.addEventListener("click", async () => {
+
+    if(audio.paused){
+
+        try{
+
+            await audio.play();
+
+            playButton.innerHTML = "⏸ Pause";
+            autoplayInfo.textContent = "La musique est en lecture.";
+
+        }catch(error){
+
+            autoplayInfo.textContent =
+                "Impossible de lancer la musique avec ce fichier.";
+
+        }
+
+    }else{
+
+        audio.pause();
+
+        playButton.innerHTML = "▶ Écouter la chanson";
+        autoplayInfo.textContent = "Musique en pause.";
+
+    }
+
+});
+
+
+audio.addEventListener("play", () => {
+
+    playButton.innerHTML = "⏸ Pause";
+    autoplayInfo.textContent = "La musique est en lecture.";
+
+});
+
+
+audio.addEventListener("pause", () => {
+
+    playButton.innerHTML = "▶ Écouter la chanson";
+
+});
+
+
+audio.addEventListener("ended", () => {
+
+    playButton.innerHTML = "▶ Écouter la chanson";
+
+});
+
+
+/* =========================================================
+   APPARITION PROGRESSIVE DES TEXTES
+   ========================================================= */
+
+const revealElements =
+    document.querySelectorAll(".reveal");
+
+const observer =
+    new IntersectionObserver(
+
+        (entries) => {
+
+            entries.forEach(entry => {
+
+                if(entry.isIntersecting){
+
+                    entry.target.classList.add("visible");
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold:0.08
+        }
+
+    );
+
+
+revealElements.forEach(element => {
+
+    observer.observe(element);
+
+});
+
+
+/* =========================================================
+   BOUTON RETOUR EN HAUT
+   ========================================================= */
+
+const backTop =
+    document.getElementById("backTop");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 500){
+
+        backTop.classList.add("show");
+
+    }else{
+
+        backTop.classList.remove("show");
+
+    }
+
+});
+
+
+backTop.addEventListener("click", () => {
+
+    window.scrollTo({
+
+        top:0,
+        behavior:"smooth"
+
+    });
+
+});
+
+
+/* =========================================================
+   RACCOURCI CLAVIER : ESPACE POUR LECTURE/PAUSE
+   ========================================================= */
+
+document.addEventListener("keydown", (event) => {
+
+    if(
+        event.code === "Space" &&
+        document.activeElement.tagName !== "BUTTON" &&
+        document.activeElement.tagName !== "A"
+    ){
+
+        event.preventDefault();
+
+        if(audio.paused){
+
+            audio.play();
+
+        }else{
+
+            audio.pause();
+
+        }
+
+    }
+
+});
+
+
+/* =========================================================
+   PROTECTION CONTRE UNE ERREUR DE CHARGEMENT DU FICHIER
+   ========================================================= */
+
+audio.addEventListener("error", () => {
+
+    autoplayInfo.textContent =
+        "Le fichier audio n’a pas pu être chargé. Vérifiez le lien de la chanson.";
+
+});
+
+
+</script>
+
+</body>
+</html>
